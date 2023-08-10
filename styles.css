@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexJustifyCenter {
+    justify-content: center;
+}
+
+.flexJustifySpaceAround {
+    justify-content: space-around;
+}
+
+.flexAlignItems {
+    align-items: center;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
+
+.paddingY20 {
+   padding: 20px 0;
+}
+
+.paddingTop10 {
+    padding-top: 10px;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.col-3 {
+    width: 33.3%;
+}
+
+.col-2  {
+  width: 50%;
+}
+
+.col-2-of-3 {
+    width: 75%;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.rounded-corner {
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bgcolorBlue {
+    background-color: rgb(18, 18, 167);
+}
+
+.bgcolorWhite {
+    background-color: white;
+}
+
+.bgcolorBlueSky {
+    background-color: rgb(192, 231, 247);
+}
+
+.bgcolorBlue2 {
+    background-color: #006ce4;
+}
+
+.bgcolorDarkBlue {
+    background-color: rgb(5, 5, 90);
+}
+
+.colorWhite {
+    color: white;
+}
+
+.colorGrey {
+    color: rgba(168, 168, 168, 0.806);
+}
+
+.colorBlack {
+    color: black;
+}
+
+.colorBlue {
+    color:rgb(29, 29, 236);
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.bigText {
+    font-size: 22px;
+}
+
+.mediumText {
+    font-size: 18px;
+}
+
+.smallText {
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+input[type=email] {
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.borderDiv {
+    border: 1px solid black;
+}
+
+.textCenter  {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 130px;
+    padding: 0 10px;
+}
+
+.robotoFontFamily {
+    font-family: 'Roboto';
+}
+
+#stays:hover, 
+#flight:hover,
+#car:hover,
+#attraction:hover,
+#airport:hover
+{
+    background-color: rgb(49, 29, 232);
+}
+
+.bgcolorBlue2:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width:1024px) {
+    .container-lg {
+        width: 90%;
+        margin: auto;
+    }
+    .flex-justify-space-around-lg {
+        justify-content: space-around;
+    }
+    .gap-lg {
+       gap: 20px;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+    .col-lg-2 {
+        width: 50%;
+    }
+    .direction-lg-row {
+        flex-direction: row;
+    }
+    .direction-lg-column {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container-md {
+        width: 90%;
+        margin: auto;
+    } 
+    .col-md-2 {
+        width: 50%;
+    }
+    .direction-md-row {
+        flex-direction: row;
+    }
+    .direction-md-column {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .container-xs {
+        width: 100%;
+    }
+    .col-xs-1 {
+        width: 100%;
+    }
+    .direction-xs-row {
+        flex-direction: row;
+    }
+    .direction-xs-column {
+        flex-direction: column;
+    }
+    .margin-top-20-xs {
+      margin-top: 20px;
+    }
+    .margin-bottom-20-xs {
+        margin-bottom: 20px;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+}
