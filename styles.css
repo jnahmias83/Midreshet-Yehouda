@@ -15,16 +15,20 @@ body {
     display: flex;
 }
 
-.flexJustifyCenter {
+.flex-justify-center {
     justify-content: center;
 }
 
-.flexJustifySpaceAround {
-    justify-content: space-around;
+.flex-space-between {
+    justify-content: space-between;
 }
 
-.flexAlignItems {
+.flex-align-items {
     align-items: center;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .direction-row {
@@ -38,8 +42,32 @@ body {
    padding: 20px 0;
 }
 
-.paddingTop10 {
+.padding-top-10 {
     padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.col-5 {
+    width: 20%;
 }
 
 .col-4 {
@@ -47,7 +75,7 @@ body {
 }
 
 .col-3 {
-    width: 33.3%;
+    width: 33.33%;
 }
 
 .col-2  {
@@ -55,120 +83,87 @@ body {
 }
 
 .col-2-of-3 {
-    width: 75%;
-}
-
-.btn {
-    padding: 10px 15px;
-    border-radius: 10px;
-    border-color: white;
-}
-
-.rounded-corner {
-    border-radius: 20px;
-    border: 1px solid white;
+    width: 66.66%;
 }
 
 a {
     color: inherit;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-.bgcolorBlue {
-    background-color: rgb(18, 18, 167);
+.btn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-color: white;
+    border-radius: 10px;
 }
 
-.bgcolorWhite {
-    background-color: white;
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
-.bgcolorBlueSky {
-    background-color: rgb(192, 231, 247);
+.image {
+    width: 100%;
+    height: auto;
 }
 
-.bgcolorBlue2 {
-    background-color: #006ce4;
-}
-
-.bgcolorDarkBlue {
-    background-color: rgb(5, 5, 90);
-}
-
-.colorWhite {
+.color-white {
     color: white;
 }
 
-.colorGrey {
-    color: rgba(168, 168, 168, 0.806);
+.color-darkblue {
+    color:darkblue;
 }
 
-.colorBlack {
-    color: black;
+.color-skyblue {
+    color: #24b6c5;
 }
 
-.colorBlue {
-    color:rgb(29, 29, 236);
+.color-pink {
+    color: #ec4f84;
 }
 
-.strong {
-    font-weight: bold;
+.bgcolor-gray {
+    background-color: #333333;
+}
+    
+.bgcolor-darkblue {
+   background-color: #152840;
 }
 
-.bigText {
-    font-size: 22px;
+.bgcololor-skyblue {
+    background-color: #24b6c5;
 }
 
-.mediumText {
-    font-size: 18px;
+.medium-text {
+    font-size: 23px;
 }
 
-.smallText {
-    font-size: 14px;
+.big-text {
+    font-size: 30px;
 }
 
-input[type=checkbox] {
-    margin-right: 10px;
+.family-titilium-web {
+   font-family: "Titillium Web", sans-serif;
 }
 
+input[type=text],
 input[type=email] {
-    height: 40px;
-    width: 250px;
+    height: 60px;
+    width: 300px;
     padding-left: 10px;
     border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    color:darkblue;
 }
 
-.borderDiv {
-    border: 1px solid black;
-}
-
-.textCenter  {
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    height: 130px;
-    padding: 0 10px;
-}
-
-.robotoFontFamily {
-    font-family: 'Roboto';
-}
-
-#stays:hover, 
-#flight:hover,
-#car:hover,
-#attraction:hover,
-#airport:hover
-{
-    background-color: rgb(49, 29, 232);
-}
-
-.bgcolorBlue2:hover {
-    background-color: blue;
+input[type=text]::placeholder,
+input[type=email]::placeholder
+ {
+    color:darkblue;
 }
 
 @media screen and (max-width:1024px) {
@@ -185,8 +180,8 @@ img {
     .text-center-lg {
         text-align: center;
     }
-    .col-lg-2 {
-        width: 50%;
+    .col-lg-1 {
+        width: 100%;
     }
     .direction-lg-row {
         flex-direction: row;
@@ -194,6 +189,19 @@ img {
     .direction-lg-column {
         flex-direction: column;
     }
+    .display-block-lg {
+        display: block;
+    }
+    .medium-text-lg {
+        font-size: 28px;
+    }
+    input[type=text],
+    input[type=email] {
+        width: 350px;
+   }
+   .height-lg {
+    height: 450px;
+ }
 }
 
 @media screen and (max-width:768px) {
@@ -201,8 +209,8 @@ img {
         width: 90%;
         margin: auto;
     } 
-    .col-md-2 {
-        width: 50%;
+    .col-md-1 {
+        width: 100%;
     }
     .direction-md-row {
         flex-direction: row;
@@ -210,12 +218,21 @@ img {
     .direction-md-column {
         flex-direction: column;
     }
+    .display-block-md {
+        display: block;
+    }
+    input[type=text],
+    input[type=email] {
+        width: 350px;
+   }
+    .height-md {
+        height: 450px;
+   }
 }
-
 
 @media screen and (max-width:576px) {
     .container-xs {
-        width: 100%;
+        width: 80%;
     }
     .col-xs-1 {
         width: 100%;
@@ -232,7 +249,23 @@ img {
     .margin-bottom-20-xs {
         margin-bottom: 20px;
     }
-    .text-center-xs {
-        text-align: center;
+    .display-block-xs {
+        display: block;
     }
+    .medium-text-xs {
+        font-size: 25px;
+    }
+    .small-text-xs {
+        font-size: 20px;
+    }
+    input[type=text],
+    input[type=email] {
+        width: 250px;
+   }
+   .height-xs {
+      height: 450px;
+   }
+   .btn-padding-xs {
+    padding: 10px 7px;
+   }
 }
