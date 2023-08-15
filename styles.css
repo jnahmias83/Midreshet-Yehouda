@@ -6,6 +6,14 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
 .container {
     width: 1200px;
     margin: auto;
@@ -27,6 +35,10 @@ body {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .text-center {
     text-align: center;
 }
@@ -34,8 +46,13 @@ body {
 .direction-row {
     flex-direction: row;
 }
+
 .direction-column {
     flex-direction: column;
+}
+
+.gap {
+    gap: 20px;
 }
 
 .paddingY20 {
@@ -48,10 +65,6 @@ body {
 
 .padding-top-20 {
     padding-top: 20px;
-}
-
-.padding-top-40 {
-    padding-top: 40px;
 }
 
 .padding-bottom-20 {
@@ -75,7 +88,7 @@ body {
 }
 
 .col-3 {
-    width: 33.33%;
+    width: 30%;
 }
 
 .col-2  {
@@ -90,6 +103,11 @@ a {
     color: inherit;
     cursor: pointer;
     margin-right: 15px;
+    text-decoration: none;
+}
+
+.none-underline {
+    text-decoration: none;
 }
 
 .btn {
@@ -128,7 +146,7 @@ a {
 .bgcolor-gray {
     background-color: #333333;
 }
-    
+
 .bgcolor-darkblue {
    background-color: #152840;
 }
@@ -142,11 +160,19 @@ a {
 }
 
 .big-text {
-    font-size: 30px;
+    font-size: 31px;
 }
 
 .family-titilium-web {
    font-family: "Titillium Web", sans-serif;
+}
+
+.line-height {
+    line-height: 1.4em;
+}
+
+.height130 {
+    height: 130px;
 }
 
 input[type=text],
@@ -166,6 +192,36 @@ input[type=email]::placeholder
     color:darkblue;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    width: 35%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 @media screen and (max-width:1024px) {
     .container-lg {
         width: 90%;
@@ -182,6 +238,9 @@ input[type=email]::placeholder
     }
     .col-lg-1 {
         width: 100%;
+    }
+    .col-lg-2 {
+        width: 48%;
     }
     .direction-lg-row {
         flex-direction: row;
@@ -200,17 +259,23 @@ input[type=email]::placeholder
         width: 350px;
    }
    .height-lg {
-    height: 450px;
- }
+      height: 450px;
+   }
+   .modal-content-lg {
+     width: 51%;
+   }
 }
 
 @media screen and (max-width:768px) {
     .container-md {
         width: 90%;
         margin: auto;
-    } 
+    }
     .col-md-1 {
         width: 100%;
+    }
+    .col-md-2 {
+        width: 48%;
     }
     .direction-md-row {
         flex-direction: row;
@@ -225,8 +290,11 @@ input[type=email]::placeholder
     input[type=email] {
         width: 350px;
    }
-    .height-md {
+   .height-md {
         height: 450px;
+   }
+   .modal-content-md {
+     width: 52%;
    }
 }
 
@@ -263,9 +331,18 @@ input[type=email]::placeholder
         width: 250px;
    }
    .height-xs {
-      height: 450px;
+       height: 450px;
    }
    .btn-padding-xs {
-    padding: 10px 7px;
+       padding: 10px 5px;
+   }
+   .display-inline-block-xs {
+       display: inline-block;
+   }
+   .padding-top-0-xs {
+       padding-top: 0px;
+   }
+   .modal-content-xs {
+      width: 80%;
    }
 }
